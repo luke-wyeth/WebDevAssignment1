@@ -1,0 +1,10 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+$color-accentYellow:#ffe100;
+
+body {
+    background-color: theme-color-level(dark, 2);
+}
+
+h1 {
+    color: $color-accentYellow;
+}
