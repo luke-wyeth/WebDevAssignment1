@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Luke Wyeth</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home </a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link active" href="poststatusform.html"
+          >Post a status <span class="sr-only">(current)</span></a
+        >
+        <a class="nav-item nav-link" href="searchstatusform.html"
+          >Search for a status</a
+        >
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h1>Post Status</h1>
+
+        <form action="poststatusprocess.php" method="post">
+          <label
+            >Status Code (required):<input type="text" name="code" />
+          </label>
+          <label class="status-text-entry"
+            >Status (required):<input type="text" name="status"
+          /></label>
+
+          <div class="buttonset">
+            <div class="buttonset__title">Share:</div>
+
+            <div class="buttonset__buttons">
+              <div class="buttonset__buttons__btn">
+                <input type="radio" id="public" name="privacy" value="public" />
+                <label for="public">Public</label>
+              </div>
+
+              <div class="buttonset__buttons__btn">
+                <input
+                  type="radio"
+                  id="friends"
+                  name="privacy"
+                  value="friends"
+                />
+                <label for="friends">Friends</label>
+              </div>
+
+              <div class="buttonset__buttons__btn">
+                <input
+                  type="radio"
+                  id="private"
+                  name="privacy"
+                  value="private"
+                />
+                <label for="private">Only Me</label>
+              </div>
+            </div>
+          </div>
+
+          <label>Date:<input type="date" name="date" /> </label>
+
+          <div class="buttonset">
+            <div class="buttonset__title">Permission Type:</div>
+
+            <div class="buttonset__buttons">
+              <div class="buttonset__buttons__btn">
+                <input
+                  type="checkbox"
+                  id="like"
+                  name="permission"
+                  value="like"
+                />
+                <label for="like">Allow Like</label>
+              </div>
+
+              <div class="buttonset__buttons__btn">
+                <input
+                  type="checkbox"
+                  id="comment"
+                  name="permission"
+                  value="comment"
+                />
+                <label for="comment">Allow Comment</label>
+              </div>
+
+              <div class="buttonset__buttons__btn">
+                <input
+                  type="checkbox"
+                  id="share"
+                  name="permission"
+                  value="share"
+                />
+                <label for="share">Allow Share</label>
+              </div>
+            </div>
+          </div>
+
+          <input class="submit-button" type="submit" value="Post" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

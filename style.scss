@@ -1,10 +1,80 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-$color-accentYellow:#ffe100;
+$color-accent-yellow: #ffe100;
+$color-accent-header: #343a40;
 
 body {
-    background-color: theme-color-level(dark, 2);
+  background-color: theme-color-level(dark, 2);
 }
 
 h1 {
-    color: $color-accentYellow;
+  color: $color-accent-yellow;
+  font-family: "Ringside Regular A", "Ringside Regular B", "Lucida Sans Unicode",
+    "Tahoma", "Sans-Serif";
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 10px 10px 10px 10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 30px;
+}
+
+.content {
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  align-content: center;
+}
+
+form {
+  padding: 10px;
+
+  .status-text-entry {
+    height: 200px;
+    input {
+      width: 50%;
+    }
+  }
+
+  label {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttonset {
+    display: flex;
+    align-content: row;
+    justify-content: space-between;
+
+    &__title {
+      padding-top: 20px;
+      padding-right: 20px;
+      color: white;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+
+      &__btn {
+        display: -webkit-inline-box;
+        padding: 20px;
+
+        label {
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+
+  .submit-button {
+      background-color: $color-accent-header;
+      color: $color-accent-yellow;
+  }
 }
