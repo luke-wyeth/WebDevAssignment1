@@ -15,6 +15,16 @@ h1 {
   padding: 10px 10px 10px 10px;
 }
 
+h2 {
+  color: white;
+  font-family: "Ringside Regular A", "Ringside Regular B", "Lucida Sans Unicode",
+  "Tahoma", "Sans-Serif";
+  font-size: 1.2rem;
+  font-weight: 550;
+  letter-spacing: 0.05em;
+  padding: 5px 5px 10px 5px;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -76,5 +86,38 @@ form {
   .submit-button {
       background-color: $color-accent-header;
       color: $color-accent-yellow;
+      border: 1px solid white;
+      width: 25%;
+  }
+}
+
+.carousel-inner {
+  p, h5 {
+    color: $color-accent-yellow;
+    font-family: 'Merriweather', serif;
+  }
+
+  .carousel-item {
+    img {
+      height: 360px;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(30%) grayscale(90%);
+    }
+  }
+}
+
+.question-box {
+  background-color: $color-accent-header;
+  font-family: 'Merriweather', serif;
+  color: white;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+
+  &__title {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    padding-bottom: 5px;
   }
 }

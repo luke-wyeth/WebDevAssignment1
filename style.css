@@ -10776,6 +10776,15 @@ h1 {
   padding: 10px 10px 10px 10px;
 }
 
+h2 {
+  color: white;
+  font-family: "Ringside Regular A", "Ringside Regular B", "Lucida Sans Unicode", "Tahoma", "Sans-Serif";
+  font-size: 1.2rem;
+  font-weight: 550;
+  letter-spacing: 0.05em;
+  padding: 5px 5px 10px 5px;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10864,5 +10873,36 @@ form .buttonset__buttons__btn label {
 form .submit-button {
   background-color: #343a40;
   color: #ffe100;
+  border: 1px solid white;
+  width: 25%;
+}
+
+.carousel-inner p, .carousel-inner h5 {
+  color: #ffe100;
+  font-family: 'Merriweather', serif;
+}
+
+.carousel-inner .carousel-item img {
+  height: 360px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(30%) grayscale(90%);
+          filter: brightness(30%) grayscale(90%);
+}
+
+.question-box {
+  background-color: #343a40;
+  font-family: 'Merriweather', serif;
+  color: white;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.question-box__title {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  padding-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */

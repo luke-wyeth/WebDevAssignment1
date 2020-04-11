@@ -52,7 +52,7 @@
       <div class="content">
         <h1>Post Status</h1>
 
-        <form action="poststatusprocess.php" method="post">
+        <form action="poststatusprocess.php" method="post" target="post-status-output">
           <label
             >Status Code (required):<input type="text" name="code" />
           </label>
@@ -131,6 +131,8 @@
 
           <input class="submit-button" type="submit" value="Post" />
         </form>
+
+        <iframe name="post-status-output" frameborder="0" cellspacing="0"></iframe>
       </div>
     </div>
   </body>

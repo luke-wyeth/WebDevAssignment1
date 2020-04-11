@@ -16,6 +16,11 @@
       crossorigin="anonymous"
     />
 
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
     <title>About Page</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -53,6 +58,93 @@
     <div class="wrapper">
       <div class="content">
         <h1>About</h1>
+        <h2>This website uses these languages</h2>
+
+        <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item item active">
+              <img src="images/html.jpg" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>HTML</h5>
+                <p>The framework of every web page</p>
+              </div>
+            </div>
+            <div class="carousel-item item">
+              <img src="images/scss.jpg" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SCSS</h5>
+                <p>a CSS extension language included with Bootstrap that compiles into CSS</p>
+              </div>
+            </div>
+            <div class="carousel-item item">
+              <img src="images/php.jpg" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>PHP</h5>
+                <p>A serverside scripting language</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <br> <br>
+        <h2>Questions</h2>
+
+        <div class="question-box">
+          <div class="question-box__title">
+            What special features have you done, or attempted, in creating the site that we should know about? 
+          </div>
+          <li>Using Bootstrap</li>
+          <li>Image carousel -- using Bootstrap and royalty free images</li>
+          <li>Top header bar -- using Bootstrap</li>
+          <li>Using BEM CSS -- a structured CSS/SASS methodology for cleaner code</li>
+          
+        </div>
+
+        <div class="question-box">
+          <div class="question-box__title">
+            Which parts did you have trouble with? 
+          </div>
+          <li>Image carousel -- using Bootstrap and royalty free images</li>
+          <li>Top header bar -- using Bootstrap</li>
+        </div>
+
+        <div class="question-box">
+          <div class="question-box__title">
+            What would you like to do better next time? 
+          </div>
+          <li>Image carousel -- using Bootstrap and royalty free images</li>
+          <li>Top header bar -- using Bootstrap</li>
+        </div>
+
+        <div class="question-box">
+          <div class="question-box__title">
+           What references/sources have you used to help you learn how to create your website?
+          </div>
+          <li><a href="https://css-tricks.com/">css-tricks.com</a> -- a resource for CSS, HTML, JavaScript</li>
+          <li>Top header bar -- using Bootstrap</li>
+        </div>
+
+        <div class="question-box">
+          <div class="question-box__title">
+            What have you learnt along the way?
+          </div>
+          <li>Image carousel -- using Bootstrap and royalty free images</li>
+          <li>Top header bar -- using Bootstrap</li>
+        </div>
+
       </div>
     </div>
   </body>
